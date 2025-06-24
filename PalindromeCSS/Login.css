@@ -1,3 +1,16 @@
+:root{
+    /*Colors*/
+    --body-color:#0f0a06;
+    --main-color:#1C1B1A;
+    --white-color: #ffffff;
+
+    /**/
+    --h1-font-size: 2em;
+    --small-font-size:1em;
+    --smallest-font-size: 0.8em;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +19,7 @@
 
 body{
     font-family: Open Sans, arial, sans-serif;
-    background-color: #0f0a06;
+    background-color: var(--body-color);
     color: white;
     display: flex;
     justify-content: center;
@@ -14,7 +27,7 @@ body{
 
 main{
     position: relative;
-    background-color: #1C1B1A;
+    background-color: var(--main-color);
     width: 400px;
     height: 450px;
     margin: 125px 0 125px 0;
@@ -27,8 +40,8 @@ main{
 
 h1{
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 50px;
+    font-size: var(--h1-font-size);
     transition: 0.5s ease;
 }
 
@@ -36,14 +49,14 @@ h1{
 
 .input_credential{
     position: relative;
-    height: 100px;
-    margin: 30px 0;
+    width: 310px;
+    margin: 30px 0 10px 0;
 }
 
 .input_credential .input_line{
     position: absolute;
     width: 100%;
-    background-color: white;
+    background-color: var(--white-color);
     height: 2px;
     bottom: -1px;
     transition: .5s ease;
@@ -55,29 +68,40 @@ h1{
     left: 5px;
     transform: translateY(-50%);
     transition: .5s ease;
-    font-size: 1em;
-    color: white;
+    font-size: var(--small-font-size);
+    color: var(--white-color);
     pointer-events: none;
 }
 
-.input_credential input:focus + label,
-.input_credential input:valid + label{
-    top: -10px;
-    left: 5px;
-    font-size: 0.8em;
-    color: #00BFFF;
-}
 
 .input_credential input{
-    background-color: #1C1B1A;
+    background:transparent;
     width: 100%;
-    margin-top: 10px;
+    margin:10px 0 5px 0;
     min-height: 2rem;
     border: none;
-    color: white;
+    color: var(--white-color);
     outline: none;
     padding: 0 35px 0 5px;
+    font-size: var(--small-font-size);
 }
+
+.input_credential input:focus + label,
+.input_credential input:valid + label {
+    top: -5px;
+}
+
+/*Remenber*/
+
+.Remenber_Me{
+    position: relative;
+    color: var(--white-color);
+    font-size: var(--smallest-font-size);
+}
+
+
+
+
 
 
 
