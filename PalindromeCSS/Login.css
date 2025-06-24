@@ -32,27 +32,12 @@ h1{
     transition: 0.5s ease;
 }
 
+/* Contenedor del input y label */
+
 .input_credential{
     position: relative;
     height: 100px;
     margin: 30px 0;
-}
-
-.input_credential input{
-    background-color: #1C1B1A;
-    width: 100%;
-    margin-top: 10px;
-    min-height: 2rem;
-    border: none;
-}
-
-.input_credential label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    transition: .5s ease;
-    font-size: 1em;
 }
 
 .input_credential .input_line{
@@ -63,3 +48,37 @@ h1{
     bottom: -1px;
     transition: .5s ease;
 }
+
+.input_credential label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s ease;
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+}
+
+.input_credential input:focus + label,
+.input_credential input:valid + label{
+    top: -10px;
+    left: 5px;
+    font-size: 0.8em;
+    color: #00BFFF;
+}
+
+.input_credential input{
+    background-color: #1C1B1A;
+    width: 100%;
+    margin-top: 10px;
+    min-height: 2rem;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 0 35px 0 5px;
+}
+
+
+
+
