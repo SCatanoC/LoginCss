@@ -2,7 +2,7 @@
 
 Formulario de login básico con diseño moderno, hecho solo con **HTML** y **CSS**.
 
-## ✨ Características
+##  Características
 
 - Inputs animados con etiquetas flotantes.
 - Estilo oscuro y centrado.
